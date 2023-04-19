@@ -7,6 +7,7 @@ const Title = ({title, handleMouseEnter, handleMouseLeave}) => {
       onMouseLeave={handleMouseLeave}
     >
         <h1 className='menu-title'>{title}</h1>
+        <h1 className='menu-title clone'>{title}</h1>
     </div>
   )
 }

@@ -1,16 +1,17 @@
-import React from 'react'
+import React from "react";
 
-const Image = ({url, opacity, parallaxPosition}) => {
+const Image = ({ url, opacity, parallaxPosition, scale, rotation }) => {
   return (
     <img
-        src={url}
-
-        style={{
-          opacity: opacity,
-          transform: `translate3d(${parallaxPosition.x}px, ${parallaxPosition.y}px, 0px)`
-        }}
+      src={url}
+      style={{
+        opacity: opacity,
+        width: "400px",
+        height: "500px",
+        transform: `translate3d(${parallaxPosition.x}px, ${parallaxPosition.y}px, 0px) rotate(${rotation}deg) scale(${scale})`,
+      }}
     />
-  )
-}
+  );
+};
 
-export default Image
+export default Image;
